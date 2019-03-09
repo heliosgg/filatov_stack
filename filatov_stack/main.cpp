@@ -3,6 +3,8 @@
 using namespace std;
 using namespace stack;
 
+#define N 20
+
 int main()
 {
    C_Stack<int>* st = new C_Stack<int>();
@@ -11,9 +13,9 @@ int main()
 
    int temp;
 
-   for (int i = 0; i < 20; i++)
+   for (int i = 0; i < N; i++)
    {
-      temp = rand() % 20;
+      temp = rand() % N;
       cout << temp << " ";
 
       st->Push(temp);
